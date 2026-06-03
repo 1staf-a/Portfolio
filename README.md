@@ -9,6 +9,7 @@ The site uses only HTML, CSS, and minimal JavaScript. It has no build step, no p
 - `index.html` - page content, sections, navigation, and TODO placeholders.
 - `styles.css` - dark monochrome visual system, responsive layout, cards, timeline, buttons, and accessibility states.
 - `script.js` - mobile navigation, active navigation highlighting, and current-year footer update.
+- `projects/` - static project detail pages with editable placeholders for future figures, reports, links, and notes.
 - `README.md` - editing and deployment notes.
 
 ## Editing Content
@@ -19,9 +20,8 @@ Most content changes happen in `index.html`. Search for `TODO` to find placehold
 
 Edit the hero name, title, positioning statement, and external links near the top of `index.html`.
 
-Replace:
+Update:
 
-- `TODO URL` for the GitHub button.
 - The hero statement when the research direction becomes more specific.
 - The hero fact blocks as research interests and tools evolve.
 
@@ -35,16 +35,24 @@ Each research interest is a compact card in the `research` section. To add a new
 
 ### Projects
 
-Each project is an `<article class="project-card">` block in the `projects` section.
+Each project is an `<article class="project-card">` block in the `projects` section of `index.html`. Each card links to a matching HTML page inside the `projects/` directory.
 
-To update a project:
+To update a project card:
 
 1. Edit the project title.
 2. Replace the summary with a specific description.
 3. Update the tags in the `<ul class="tag-list">`.
-4. Replace `TODO: Add project link` with a real link when a repository, report, demo, or page is available.
+4. Keep the local project page link, or replace it with a repository, report, demo, or paper link if that becomes the preferred destination.
 
-Project entries currently include placeholders for future links and media. No screenshots or extra assets are required for the current version.
+To update a project detail page:
+
+1. Open the matching file in `projects/`.
+2. Edit the overview paragraph.
+3. Replace TODO items under **Future Content**.
+4. Update the metadata in the **Project Notes** sidebar.
+5. Add images, reports, repositories, or demos later if you decide to introduce assets.
+
+Project pages currently include placeholders for future links and media. No screenshots or extra assets are required for the current version.
 
 ### Experience
 
@@ -73,9 +81,7 @@ The contact section includes:
 
 - Email: `iqureshi@ucmerced.edu`
 - LinkedIn: `linkedin.com/in/istafa-qureshi`
-- GitHub: `TODO: Add GitHub URL`
-
-Replace the GitHub placeholder before publishing widely.
+- GitHub: `github.com/1staf-a`
 
 ## Replacing TODO Placeholders
 
@@ -96,7 +102,7 @@ Keep TODO text visible until the information is confirmed. Do not replace placeh
 ## GitHub Pages Deployment
 
 1. Create a new GitHub repository.
-2. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository root.
+2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, and the `projects/` folder to the repository root.
 3. Commit the files.
 4. Open the repository settings on GitHub.
 5. Go to **Pages**.

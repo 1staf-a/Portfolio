@@ -704,6 +704,86 @@ a.project-link {
   font-size: 0.88rem;
 }
 
+.project-page h1 {
+  max-width: 920px;
+}
+
+.project-hero {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+
+.back-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: var(--space-6);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  text-decoration: none;
+}
+
+.back-link::before {
+  content: "< ";
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.project-detail-main,
+.project-detail-aside {
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: var(--border-thin);
+  border-radius: var(--radius-md);
+}
+
+.project-detail-main h2,
+.project-detail-aside h2 {
+  margin-bottom: var(--space-4);
+  font-size: 1.25rem;
+}
+
+.project-detail-main h2:not(:first-child) {
+  margin-top: var(--space-7);
+}
+
+.project-detail-main li {
+  color: var(--color-text-muted);
+}
+
+.meta-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.meta-list div {
+  padding-top: var(--space-4);
+  border-top: var(--border-thin);
+}
+
+.meta-list div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.meta-list dt {
+  margin-bottom: var(--space-1);
+  color: var(--color-text-soft);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.meta-list dd {
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
 @media (max-width: 980px) {
   h1 {
     font-size: 3.25rem;
@@ -734,6 +814,10 @@ a.project-link {
   }
 
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -852,6 +936,8 @@ a.project-link {
 
   .topic-card,
   .project-card,
+  .project-detail-main,
+  .project-detail-aside,
   .skill-group,
   .writing-item,
   .academic-path,
