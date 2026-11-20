@@ -6,15 +6,15 @@ The site uses only HTML, CSS, and minimal JavaScript. It has no build step, no p
 
 ## Files
 
-- `index.html` - page content, sections, navigation, and TODO placeholders.
+- `index.html` - homepage content, sections, and navigation.
 - `styles.css` - dark monochrome visual system, responsive layout, cards, timeline, buttons, and accessibility states.
 - `script.js` - mobile navigation, active navigation highlighting, and current-year footer update.
-- `projects/` - static project detail pages with editable placeholders for future figures, reports, links, and notes.
+- `projects/` - static project detail pages.
 - `README.md` - editing and deployment notes.
 
 ## Editing Content
 
-Most content changes happen in `index.html`. Search for `TODO` to find placeholders that should be updated over time.
+Most content changes happen in `index.html`.
 
 ### Hero Section
 
@@ -29,7 +29,7 @@ Update:
 
 Update the overview paragraphs in the `about` section as the PhD research direction, lab affiliation, advisor information, and dissertation topic become ready to publish.
 
-### Research Interests
+### Research Collaborations
 
 Each research interest is a compact card in the `research` section. To add a new topic, copy one existing `<article class="topic-card">` block and edit the title and description.
 
@@ -48,11 +48,8 @@ To update a project detail page:
 
 1. Open the matching file in `projects/`.
 2. Edit the overview paragraph.
-3. Replace TODO items under **Future Content**.
-4. Update the metadata in the **Project Notes** sidebar.
-5. Add images, reports, repositories, or demos later if you decide to introduce assets.
-
-Project pages currently include placeholders for future links and media. No screenshots or extra assets are required for the current version.
+3. Update the metadata in the **Project Notes** sidebar.
+4. Add images, reports, repositories, or demos later if you decide to introduce assets.
 
 ### Experience
 
@@ -69,7 +66,7 @@ The `publications` section is structured for:
 - Technical notes
 - Research articles
 
-Replace the final TODO entry with a real publication or writing entry when available. For each entry, include authors, year, title, status, venue, DOI, arXiv link, code link, or report link as appropriate.
+For each entry, include authors, year, title, status, venue, DOI, arXiv link, code link, or report link as appropriate.
 
 ### Skills
 
@@ -82,22 +79,6 @@ The contact section includes:
 - Email: `iqureshi@ucmerced.edu`
 - LinkedIn: `linkedin.com/in/istafa-qureshi`
 - GitHub: `github.com/1staf-a`
-
-## Replacing TODO Placeholders
-
-Search the project for `TODO`. Common replacements include:
-
-- GitHub profile URL
-- GitHub Pages URL
-- Project repository links
-- Project reports or demos
-- Advisor information
-- Lab affiliation
-- Course links
-- Publication metadata
-- Portfolio download link
-
-Keep TODO text visible until the information is confirmed. Do not replace placeholders with guessed dates, employers, publication venues, or credentials.
 
 ## GitHub Pages Deployment
 
@@ -131,4 +112,4 @@ Open `index.html` directly in a browser. The site does not require a development
 
 ## Content Integrity
 
-The site should only include verified information. Do not invent publications, awards, employers, advisors, dates, grants, patents, certifications, or links. Leave unknown items as TODO placeholders until they can be confirmed.
+The site should only include verified information. Do not invent publications, awards, employers, advisors, dates, grants, patents, certifications, or links. Omit details until they can be confirmed.

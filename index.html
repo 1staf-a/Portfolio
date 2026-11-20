@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Academic and technical portfolio for Istafa Qureshi, Mechanical Engineering PhD student at UC Merced.">
-  <title>Istafa Qureshi | Mechanical Engineering PhD Student</title>
+  <meta name="description" content="Academic and technical portfolio for Istafa Sajid Qureshi, Mechanical Engineering PhD student at UC Merced.">
+  <title>Istafa Sajid Qureshi | Mechanical Engineering PhD Student</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -13,7 +13,7 @@
 
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Istafa Qureshi home">IQ</a>
+      <a class="brand" href="#top" aria-label="Istafa Sajid Qureshi home">IQ</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="menu-lines" aria-hidden="true"></span>
         <span class="sr-only">Toggle navigation</span>
@@ -21,6 +21,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#internships">Internships</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#publications">Writing</a>
@@ -35,12 +36,14 @@
     <section class="hero section" id="top" aria-labelledby="hero-title">
       <div class="section-inner hero-inner">
         <p class="eyebrow">Computational mechanics / CFD / scientific computing</p>
-        <h1 id="hero-title">Istafa Qureshi</h1>
+        <h1 id="hero-title">Istafa Sajid Qureshi</h1>
         <p class="hero-title">Mechanical Engineering PhD Student</p>
         <p class="hero-statement">
-          I work at the intersection of computational mechanics, fluid mechanics,
-          nonlinear dynamics, fluid-structure interaction, numerical simulation,
-          and scientific software development.
+          I’m a Mechanical Engineering PhD student at UC Merced working with
+          <a href="https://sites.ucmerced.edu/sgoyal/research1">Dr. Sachin Goyal</a>.
+          I study how flexible rods deform and move, and I’m developing
+          physics-informed neural networks to model that motion and investigate
+          what it can tell us about the rod’s mechanical behavior.
         </p>
 
         <div class="hero-actions" aria-label="External links">
@@ -65,7 +68,7 @@
       </div>
     </section>
 
-    <!-- About / TODO: refine as research direction evolves -->
+    <!-- About -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="section-inner">
         <div class="section-heading">
@@ -75,24 +78,11 @@
         <div class="about-grid">
           <div class="about-copy">
             <p>
-              I am a Mechanical Engineering PhD student at the University of
-              California, Merced, working across physics-based computational
-              modeling of structural, fluid, and coupled engineering systems.
-              My current interests include nonlinear rod dynamics, variational
-              mechanics, linear controls, fluid-structure interaction, numerical
-              methods, and research software development.
-            </p>
-            <p>
               My background combines graduate research, teaching, CFD design
               engineering, and undergraduate research in mechanical engineering.
               I am especially interested in simulation workflows that connect
               mathematical models, numerical solvers, validation, visualization,
               and engineering interpretation.
-            </p>
-            <p class="todo-note">
-              TODO: Refine this section as dissertation direction, advisor
-              information, lab affiliation, and long-term research statement
-              become ready to publish.
             </p>
           </div>
           <div class="academic-path" aria-label="Academic path">
@@ -116,87 +106,104 @@
       </div>
     </section>
 
-    <!-- Research interests / editable topic cards -->
+    <!-- Research collaborations and internships -->
     <section class="section section-muted" id="research" aria-labelledby="research-title">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="eyebrow">Research Interests</p>
-          <h2 id="research-title">Mechanics, computation, and coupled systems.</h2>
+          <h2 id="research-title">Research collaborations</h2>
           <p>
-            These areas are written as durable placeholders and can be expanded
-            into lab pages, project pages, publication links, or dissertation
-            themes over time.
+            I’m interested in nonlinear rod and beam dynamics, fluid–structure
+            interaction, and physics-informed modeling. The
+            <a href="https://sites.ucmerced.edu/sgoyal/research1">Goyal Research Group</a>
+            studies mechanics, dynamics, and controls with applications in biology
+            and medicine.
           </p>
+          <p><a href="#contact">Get in touch about research collaborations</a>.</p>
         </div>
-
         <div class="card-grid">
           <article class="topic-card">
-            <h3>Nonlinear Rod and Beam Mechanics</h3>
-            <p>
-              Cosserat rods, Kirchhoff rods, geometric nonlinearity, cantilever
-              response, and structural dynamics of slender bodies.
-            </p>
+            <h3><a href="projects/nonlinear-rod-mechanics.html">Nonlinear rod and beam mechanics</a></h3>
+            <p>How do slender structures respond to changing loads when deformations are large?</p>
           </article>
           <article class="topic-card">
-            <h3>Fluid-Structure Interaction</h3>
-            <p>
-              Coupled fluid and structural systems, multiphysics modeling, and
-              reduced-order formulations for slender biological filaments.
-            </p>
+            <h3><a href="projects/fluid-structure-interaction-models.html">Fluid–structure interaction</a></h3>
+            <p>How can reduced-order models capture the coupling between a slender filament and the surrounding flow?</p>
           </article>
           <article class="topic-card">
-            <h3>CFD and Reduced-Order Modeling</h3>
-            <p>
-              Simulation workflows, parametric CFD studies, model reduction, and
-              validation against analytical or high-fidelity references.
-            </p>
-          </article>
-          <article class="topic-card">
-            <h3>Numerical Stability and Time Integration</h3>
-            <p>
-              Numerical methods, solver behavior, time integration, convergence,
-              sensitivity analysis, and robustness of computational results.
-            </p>
-          </article>
-          <article class="topic-card">
-            <h3>Control of Dynamical Systems</h3>
-            <p>
-              Feedback control, LQR correction, delay-induced oscillations, and
-              dynamic systems modeled through physics-based representations.
-            </p>
-          </article>
-          <article class="topic-card">
-            <h3>Scientific Computing and Visualization</h3>
-            <p>
-              Research code, computational studies, GUI tools, visualization
-              workflows, and clear communication of simulation results.
-            </p>
+            <h3><a href="projects/pinn-rod-dynamics.html">Physics-informed modeling</a></h3>
+            <p>What can observed motion tell us about the mechanics of a flexible rod?</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects / TODO: add repository links, figures, reports, and final descriptions -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
+    <section class="section" id="internships" aria-labelledby="internships-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2 id="internships-title">Computational mechanics internships</h2>
+          <p>
+            At NaqCoDE, I prepared CAD geometry for ANSYS Fluent, ran parametric
+            studies, and standardized how I stored and post-processed the results.
+            That workflow let me compare design variants consistently, interpret
+            which changes mattered, and explain the findings in technical reports.
+          </p>
+          <p>
+            In my landfill-gas-well study, I compared pressure profiles from
+            COMSOL with a simpler model to identify the boundary conditions
+            under which the predictions diverged.
+          </p>
+          <p>
+            <a href="projects/cfd-parametric-workflows.html">NaqCoDE CFD workflow</a> ·
+            <a href="projects/gas-well-ingress-losses.html">Landfill gas well study</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-muted" id="projects" aria-labelledby="projects-title">
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
           <h2 id="projects-title">Selected research, simulation, and software work.</h2>
-          <p>
-            Project entries intentionally leave link and media placeholders so
-            future repositories, reports, figures, or videos can be added
-            without changing the page structure.
-          </p>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
+            <div class="project-meta">Ongoing research</div>
+            <h3>Physics-Informed Neural Networks for Nonlinear Rod Dynamics</h3>
+            <p>
+              I’m developing physics-informed neural networks to model how flexible rods
+              move and to investigate what that motion can reveal about their mechanical behavior.
+            </p>
+            <ul class="tag-list">
+              <li>Physics-Informed Modeling</li>
+              <li>Rod Dynamics</li>
+            </ul>
+            <a class="project-link" href="projects/pinn-rod-dynamics.html">Project page</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Ongoing research / mentoring</div>
+            <h3>Feedback-Induced Tremors in Double Pendulum (FIT/DPD)</h3>
+            <p>
+              I developed a MATLAB/Simulink double-pendulum model and mentor two undergraduate
+              researchers. They use the model to investigate how feedback delay affects oscillations.
+            </p>
+            <ul class="tag-list">
+              <li>MATLAB / Simulink</li>
+              <li>Feedback Control</li>
+              <li>Dynamics</li>
+            </ul>
+            <a class="project-link" href="projects/double-pendulum-delay-lqr.html">Project page</a>
+          </article>
+
+          <article class="project-card">
             <div class="project-meta">Research software</div>
             <h3>Nonlinear Cantilever / Rod Mechanics Simulation</h3>
             <p>
-              Physics-based nonlinear elasticity model for slender beams and
-              rods, with a custom Python solver for cantilever response under
-              variable loading and geometric nonlinearity.
+              I built a custom Python solver to study how slender beams and rods
+              respond to changing loads when deflections are large.
             </p>
             <ul class="tag-list">
               <li>Python</li>
@@ -207,27 +214,11 @@
           </article>
 
           <article class="project-card">
-            <div class="project-meta">Controls / dynamics</div>
-            <h3>Double-Pendulum Arm Model with Delay and LQR Correction</h3>
-            <p>
-              Fully actuated double-pendulum model for studying delay-induced
-              oscillations and control-oriented correction in limb dynamics.
-            </p>
-            <ul class="tag-list">
-              <li>MATLAB</li>
-              <li>Controls</li>
-              <li>Dynamical Systems</li>
-            </ul>
-            <a class="project-link" href="projects/double-pendulum-delay-lqr.html">Project page</a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">CFD workflows</div>
+            <div class="project-meta">Industry experience</div>
             <h3>CFD Design and Parametric Simulation Workflows</h3>
             <p>
-              Reproducible Fluent-based simulation studies for complex CAD
-              geometries, including standardized data storage, post-processing,
-              sensitivity analysis, and technical reporting.
+              At NaqCoDE, I built repeatable ANSYS Fluent workflows to compare
+              design variants and report how design changes affected the results.
             </p>
             <ul class="tag-list">
               <li>ANSYS Fluent</li>
@@ -239,11 +230,10 @@
 
           <article class="project-card">
             <div class="project-meta">Teaching tool</div>
-            <h3>Beam/Rod Visualization GUI</h3>
+            <h3>Beam-Deflection GUI</h3>
             <p>
-              Interactive GUI concept for beam deflection and mechanics
-              instruction, designed to support conceptual understanding in
-              strength of materials.
+              I developed an interactive beam-deflection GUI for students in
+              Strength of Materials to visualize how a beam responds to loading.
             </p>
             <ul class="tag-list">
               <li>GUI Development</li>
@@ -255,11 +245,10 @@
 
           <article class="project-card">
             <div class="project-meta">Multiphysics</div>
-            <h3>Fluid-Structure Interaction Models</h3>
+            <h3>Fluid–Structure Interaction Models</h3>
             <p>
-              Early-stage variational and reduced-order FSI formulation for
-              slender biological filaments across low-to-moderate Reynolds
-              number regimes.
+              I worked on an early variational formulation for modeling how slender
+              biological filaments deform in a surrounding flow.
             </p>
             <ul class="tag-list">
               <li>FSI</li>
@@ -273,9 +262,8 @@
             <div class="project-meta">Research report</div>
             <h3>Modeling Ingress Losses in Gas Wells</h3>
             <p>
-              Continuum and reduced-order models for subsurface gas transport
-              in horizontal landfill gas wells, using COMSOL Java API studies
-              and quasi-1D model comparisons.
+              I used COMSOL simulations and a quasi-one-dimensional model to study
+              pressure losses where gas enters a horizontal landfill well.
             </p>
             <ul class="tag-list">
               <li>COMSOL</li>
@@ -287,34 +275,30 @@
 
           <article class="project-card">
             <div class="project-meta">Undergraduate research</div>
-            <h3>2D Bluff Body Flow Reduced-Order Model</h3>
+            <h3>2D Flow Around a Square Cylinder</h3>
             <p>
-              MATLAB-based reduced-order inviscid flow model for unsteady
-              aerodynamic force oscillations on bluff bodies with relevance to
-              wind-structure interaction and urban flow modeling.
+              I developed a MATLAB flow model to study oscillations in the
+              aerodynamic forces on a square cylinder.
             </p>
             <ul class="tag-list">
               <li>MATLAB</li>
               <li>Aerodynamics</li>
-              <li>Reduced-Order Modeling</li>
+              <li>Wind–Structure Interaction</li>
             </ul>
             <a class="project-link" href="projects/bluff-body-flow-model.html">Project page</a>
           </article>
 
           <article class="project-card">
             <div class="project-meta">Earlier engineering work</div>
-            <h3>Undergraduate CFD, FEA, and Design Portfolio</h3>
+            <h3>Undergraduate CFD and Aerodynamics</h3>
             <p>
-              Project archive spanning aircraft wing CFD, wind tunnel
-              validation, heaving airfoil and square cylinder flow, transient
-              FEA, modal analysis, heat exchanger design, and CAD-to-simulation
-              workflows.
+              Selected undergraduate CFD studies on oscillating airfoils, wing
+              bracing, and comparison with wind-tunnel data.
             </p>
             <ul class="tag-list">
               <li>CFD</li>
-              <li>FEA</li>
-              <li>CAD</li>
-              <li>Thermal Systems</li>
+              <li>Aerodynamics</li>
+              <li>Wind-Tunnel Testing</li>
             </ul>
             <a class="project-link" href="projects/undergraduate-engineering-portfolio.html">Project page</a>
           </article>
@@ -322,8 +306,8 @@
       </div>
     </section>
 
-    <!-- Experience / TODO: add advisor, lab, and course links when available -->
-    <section class="section section-muted" id="experience" aria-labelledby="experience-title">
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">Experience</p>
@@ -336,25 +320,23 @@
             <div class="timeline-content">
               <h3>Graduate Student Researcher / PhD Research</h3>
               <p class="timeline-place">University of California, Merced - Merced, CA</p>
-              <ul>
-                <li>Leading collaborative research across multiple UC campuses on nonlinear fluid-structure interaction modeling.</li>
-                <li>Developing nonlinear slender-body models, reduced-order FSI formulations, and computational implementations.</li>
-                <li>Mentoring undergraduate researchers in formulation development, numerical experiments, and interpretation of results.</li>
-                <li class="todo-line">TODO: Add advisor information and lab affiliation.</li>
-              </ul>
+              <p>
+                I work with Dr. Sachin Goyal on <a href="projects/pinn-rod-dynamics.html">rod dynamics</a>
+                and mentor undergraduate researchers on <a href="projects/double-pendulum-delay-lqr.html">FIT/DPD</a>.
+              </p>
             </div>
           </article>
 
           <article class="timeline-item">
             <div class="timeline-date">Aug 2025-current</div>
             <div class="timeline-content">
-              <h3>Teaching Assistant</h3>
+              <h3>Graduate Teaching Assistant</h3>
               <p class="timeline-place">University of California, Merced - Merced, CA</p>
               <ul>
-                <li>ENGR 57, Statics and Dynamics: guided problem-solving sessions, grading, and student learning support.</li>
-                <li>ENGR 151, Strength of Materials: supported lectures, labs, assignments, quizzes, and mechanics learning tools.</li>
-                <li>Built AI-assisted and GUI-based teaching tools to support student engagement and conceptual understanding.</li>
-                <li class="todo-line">TODO: Add course links, term details, or teaching evaluations if appropriate.</li>
+                <li><strong>ENGR 057 — Statics and Dynamics.</strong> I led problem-solving sessions and graded assignments.</li>
+                <li><strong>ENGR 151 — Strength of Materials.</strong> I gave lectures and helped develop course materials for lectures, labs, assignments, and quizzes. I developed and integrated a virtual teaching assistant (Vi-TA) and an <a href="projects/beam-rod-visualization-gui.html">interactive beam-deflection GUI</a>.</li>
+                <li><strong>ME 021 — Engineering Computing</strong></li>
+                <li><strong>ME 137 — Computer Aided Engineering</strong></li>
               </ul>
             </div>
           </article>
@@ -365,9 +347,8 @@
               <h3>CFD Design Engineer I</h3>
               <p class="timeline-place">NaqCoDE Technologies</p>
               <ul>
-                <li>Designed and executed parametric computational studies using ANSYS Fluent for complex CAD geometries.</li>
-                <li>Built reproducible simulation workflows for data storage, post-processing, sensitivity analysis, and reporting.</li>
-                <li>Prepared technical reports and supervised interns in simulation best practices.</li>
+                <li>I prepared complex CAD geometry and ran <a href="projects/cfd-parametric-workflows.html">parametric studies in ANSYS Fluent</a> to assess sensitivity to design changes.</li>
+                <li>I standardized data storage and post-processing, wrote technical reports, and supervised interns in simulation methods.</li>
               </ul>
             </div>
           </article>
@@ -377,11 +358,11 @@
             <div class="timeline-content">
               <h3>Research Intern / Modeling Ingress Losses in Gas Wells</h3>
               <p class="timeline-place">Thompson Rivers University - Kamloops, BC</p>
-              <ul>
-                <li>Developed continuum and reduced-order models for subsurface gas transport in horizontal landfill gas wells.</li>
-                <li>Used the COMSOL Java API for parametric studies and comparison with GNU Octave quasi-1D model approximations.</li>
-                <li>Authored an institutional research article documenting methodology, results, and future modeling extensions.</li>
-              </ul>
+              <p>
+                I modeled gas flow through landfill material and into a horizontal
+                well, then <a href="projects/gas-well-ingress-losses.html">compared the COMSOL and quasi-one-dimensional models</a>
+                and documented the findings in my internship report.
+              </p>
             </div>
           </article>
 
@@ -390,10 +371,10 @@
             <div class="timeline-content">
               <h3>Undergraduate Research Experience</h3>
               <p class="timeline-place">National University of Sciences and Technology</p>
-              <ul>
-                <li>Developed a MATLAB reduced-order inviscid flow model for 2D bluff body flow and unsteady aerodynamic forces.</li>
-                <li class="todo-line">TODO: Add supervisor, lab, and project links if available.</li>
-              </ul>
+              <p>
+                I developed a <a href="projects/bluff-body-flow-model.html">MATLAB model of flow around a square cylinder</a>
+                to study unsteady aerodynamic forces.
+              </p>
             </div>
           </article>
         </div>
@@ -409,50 +390,27 @@
       </div>
     </section>
 
-    <!-- Publications and writing / TODO: replace placeholders with citation format of choice -->
-    <section class="section" id="publications" aria-labelledby="publications-title">
+    <!-- Publications and writing -->
+    <section class="section section-muted" id="publications" aria-labelledby="publications-title">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="eyebrow">Publications / Writing</p>
-          <h2 id="publications-title">Papers, preprints, reports, and technical notes.</h2>
-          <p>
-            This section is structured for journal papers, conference papers,
-            preprints, technical reports, and research notes. Items below come
-            from the attached resume, with placeholders kept for future work.
-          </p>
+          <p class="eyebrow">Writing</p>
+          <h2 id="publications-title">Research reports.</h2>
         </div>
 
         <div class="writing-list">
           <article class="writing-item">
-            <p class="writing-type">Manuscript in preparation</p>
-            <h3>Delay Induced Oscillations in a Fully Actuated Double Pendulum</h3>
-            <p>Qureshi, I. 2026.</p>
-          </article>
-
-          <article class="writing-item">
-            <p class="writing-type">Manuscript in preparation</p>
-            <h3>AI-Driven Pedagogical Companions: Implementation and Assessment of Virtual Teaching Assistants in Engineering Education</h3>
-            <p>Das, R. et al. 2026.</p>
-          </article>
-
-          <article class="writing-item">
-            <p class="writing-type">Institutional report</p>
+            <p class="writing-type">Mitacs Globalink internship report</p>
             <h3>Modeling ingress losses into a horizontal landfill gas well: Reconciling 2D turbulent flow and quasi-1D approximation</h3>
             <p>Qureshi, I. 2023.</p>
-            <a href="https://tru.arcabc.ca/node/3700">View report</a>
-          </article>
-
-          <article class="writing-item placeholder-item">
-            <p class="writing-type">Future entry</p>
-            <h3>TODO: Add publication, preprint, or technical note</h3>
-            <p>TODO: Add authors, venue, year, DOI, arXiv, code, or project links.</p>
+            <a href="projects/gas-well-ingress-losses.html">Project summary</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Skills / TODO: revise proficiency levels and add tools as experience grows -->
-    <section class="section section-muted" id="skills" aria-labelledby="skills-title">
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="section-inner">
         <div class="section-heading">
           <p class="eyebrow">Skills</p>
@@ -529,15 +487,14 @@
       </div>
     </section>
 
-    <!-- Contact / TODO: update public links before deployment -->
+    <!-- Contact -->
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="section-inner contact-inner">
         <div>
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Academic and technical contact points.</h2>
           <p>
-            Use direct links rather than a contact form so the site remains
-            static, portable, and GitHub Pages compatible.
+            Email me to discuss research collaborations or computational mechanics internships.
           </p>
         </div>
         <address class="contact-list">
@@ -551,8 +508,7 @@
 
   <footer class="site-footer">
     <div class="section-inner footer-inner">
-      <p>&copy; <span id="current-year">2026</span> Istafa Qureshi.</p>
-      <p>Static academic portfolio. TODO: Add GitHub Pages URL after deployment.</p>
+      <p>&copy; <span id="current-year">2026</span> Istafa Sajid Qureshi.</p>
     </div>
   </footer>
 </body>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Project page for modeling ingress losses in horizontal landfill gas wells.">
-  <title>Gas Well Ingress Losses | Istafa Qureshi</title>
+  <meta name="description" content="Modeling Ingress Losses in Gas Wells | Istafa Sajid Qureshi">
+  <title>Modeling Ingress Losses in Gas Wells | Istafa Sajid Qureshi</title>
   <link rel="stylesheet" href="../styles.css">
   <script src="../script.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html#top" aria-label="Istafa Qureshi home">IQ</a>
+      <a class="brand" href="../index.html#top" aria-label="Istafa Sajid Qureshi home">IQ</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="menu-lines" aria-hidden="true"></span>
         <span class="sr-only">Toggle navigation</span>
@@ -20,6 +20,7 @@
       <div class="nav-links" id="nav-links">
         <a href="../index.html#about">About</a>
         <a href="../index.html#research">Research</a>
+        <a href="../index.html#internships">Internships</a>
         <a href="../index.html#projects">Projects</a>
         <a href="../index.html#experience">Experience</a>
         <a href="../index.html#publications">Writing</a>
@@ -36,15 +37,13 @@
         <p class="eyebrow">Research report</p>
         <h1>Modeling Ingress Losses in Gas Wells</h1>
         <p class="hero-statement">
-          Continuum and reduced-order modeling for subsurface gas transport in
-          horizontal landfill gas wells, developed during research at Thompson
-          Rivers University.
+          How much pressure is lost as landfill gas moves through porous
+          waste and enters a horizontal collection well?
         </p>
         <ul class="tag-list">
           <li>COMSOL</li>
           <li>Java API</li>
           <li>Reduced-Order Modeling</li>
-          <li>Porous Media Flow</li>
         </ul>
       </div>
     </section>
@@ -54,34 +53,41 @@
         <article class="project-detail-main">
           <h2>Overview</h2>
           <p>
-            This project examined pressure losses in horizontal landfill gas
-            wells by comparing continuum modeling, reduced-order modeling, and
-            quasi-1D approximation assumptions.
+            At Thompson Rivers University, I built a two-dimensional
+            axisymmetric COMSOL model coupling porous-media flow with turbulent
+            pipe flow. I used the COMSOL Java API to automate sweeps of
+            variables such as outlet pressure, waste permeability, and aperture
+            count, and to export data after each run.
           </p>
 
-          <h2>Future Content</h2>
-          <ul>
-            <li>TODO: Add a concise methods summary.</li>
-            <li>TODO: Add figures from public report materials if appropriate.</li>
-            <li>TODO: Add model comparison notes and limitations.</li>
-            <li>TODO: Add code or supplemental materials if public.</li>
-          </ul>
+          <p>
+            I compared the COMSOL pressure profiles and collected gas mass with
+            a quasi-one-dimensional model in MATLAB/GNU Octave. Pressure
+            profiles were similar for the closed outer boundary, where both
+            models collected the same gas mass. In the nominal closed-boundary
+            case, the pressure at the closed end of the pipe stayed within
+            about 500 Pa of the outlet pressure across the tested outlet
+            pressures. With an open outer boundary,
+            the models predicted different amounts of collected gas and
+            different pressure profiles. I documented these limits in my
+            internship report.
+          </p>
         </article>
 
         <aside class="project-detail-aside" aria-label="Project metadata">
           <h2>Project Notes</h2>
           <dl class="meta-list">
             <div>
-              <dt>Status</dt>
-              <dd>Institutional report available</dd>
+              <dt>Institution</dt>
+              <dd>Thompson Rivers University</dd>
             </div>
             <div>
-              <dt>Role</dt>
-              <dd>Modeling, computational studies, validation, and writing</dd>
+              <dt>Dates</dt>
+              <dd>Summer 2023</dd>
             </div>
             <div>
-              <dt>Report</dt>
-              <dd><a href="https://tru.arcabc.ca/node/3700">View institutional report</a></dd>
+              <dt>Writing</dt>
+              <dd><a href="../index.html#publications">Internship report citation</a></dd>
             </div>
           </dl>
         </aside>

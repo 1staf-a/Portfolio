@@ -435,13 +435,6 @@ li + li {
   max-width: var(--max-text-width);
 }
 
-.todo-note,
-.todo-line {
-  color: var(--color-accent);
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-}
-
 .academic-path,
 .recognition {
   padding: var(--space-5);
@@ -647,10 +640,6 @@ a.project-link {
 
 .writing-item a:hover {
   background: rgba(255, 255, 255, 0.06);
-}
-
-.placeholder-item {
-  border-style: dashed;
 }
 
 .skill-group h3 {
