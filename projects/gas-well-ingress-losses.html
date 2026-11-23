@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Modeling Ingress Losses in Gas Wells | Istafa Sajid Qureshi">
-  <title>Modeling Ingress Losses in Gas Wells | Istafa Sajid Qureshi</title>
+  <meta name="description" content="Istafa Qureshi compared COMSOL and quasi-one-dimensional models of pressure and gas collection in a horizontal landfill well.">
+  <title>Pressure Losses in a Landfill Gas Well | Istafa Qureshi</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
   <link rel="stylesheet" href="../styles.css">
   <script src="../script.js" defer></script>
 </head>
@@ -12,7 +13,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html#top" aria-label="Istafa Sajid Qureshi home">IQ</a>
+      <a class="brand" href="../index.html#top" aria-label="Istafa Qureshi home">IQ</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="menu-lines" aria-hidden="true"></span>
         <span class="sr-only">Toggle navigation</span>
@@ -20,7 +21,7 @@
       <div class="nav-links" id="nav-links">
         <a href="../index.html#about">About</a>
         <a href="../index.html#research">Research</a>
-        <a href="../index.html#internships">Internships</a>
+        <a href="../index.html#internships">Industry</a>
         <a href="../index.html#projects">Projects</a>
         <a href="../index.html#experience">Experience</a>
         <a href="../index.html#publications">Writing</a>
@@ -35,10 +36,11 @@
       <div class="section-inner">
         <a class="back-link" href="../index.html#projects">Back to projects</a>
         <p class="eyebrow">Research report</p>
-        <h1>Modeling Ingress Losses in Gas Wells</h1>
+        <h1>Pressure Losses in a Landfill Gas Well</h1>
         <p class="hero-statement">
-          How much pressure is lost as landfill gas moves through porous
-          waste and enters a horizontal collection well?
+          Landfill gas moves through porous waste before entering a
+          horizontal collection pipe. Compared two models to see how their
+          predictions changed when gas could also enter from outside the waste layer.
         </p>
         <ul class="tag-list">
           <li>COMSOL</li>
@@ -51,26 +53,31 @@
     <section class="section section-muted">
       <div class="section-inner project-detail-grid">
         <article class="project-detail-main">
-          <h2>Overview</h2>
+          <h2>Simulation and model comparison</h2>
           <p>
-            At Thompson Rivers University, I built a two-dimensional
-            axisymmetric COMSOL model coupling porous-media flow with turbulent
-            pipe flow. I used the COMSOL Java API to automate sweeps of
-            variables such as outlet pressure, waste permeability, and aperture
-            count, and to export data after each run.
+            Built a two-dimensional axisymmetric COMSOL model coupling
+            Darcy flow through porous waste with turbulent pipe flow. Matched
+            the pressures at the pipe openings to couple the two domains.
+            Used the COMSOL Java API to automate sweeps over outlet pressure,
+            waste permeability, and pipe aperture count. Compared pressure
+            profiles and collected gas mass against a quasi-one-dimensional
+            model implemented in MATLAB and GNU Octave.
           </p>
 
+          <h2>Effect of the outer boundary</h2>
           <p>
-            I compared the COMSOL pressure profiles and collected gas mass with
-            a quasi-one-dimensional model in MATLAB/GNU Octave. Pressure
-            profiles were similar for the closed outer boundary, where both
-            models collected the same gas mass. In the nominal closed-boundary
-            case, the pressure at the closed end of the pipe stayed within
-            about 500 Pa of the outlet pressure across the tested outlet
-            pressures. With an open outer boundary,
-            the models predicted different amounts of collected gas and
-            different pressure profiles. I documented these limits in my
-            internship report.
+            With no flow across the outer boundary of the waste layer, both
+            models collected the same gas mass and predicted similar pipe
+            pressure profiles. In the nominal closed-boundary case, pressure
+            at the closed end of the pipe was at most about 500 Pa above the
+            outlet pressure across the tested outlet pressures.
+          </p>
+          <p>
+            With the outer boundary held at atmospheric pressure, the models
+            differed in both pipe pressure profiles and collected gas mass.
+            The internship report documents these differences and identifies
+            parameter combinations that produced unrealistic conditions or
+            failed to converge.
           </p>
         </article>
 
@@ -87,7 +94,7 @@
             </div>
             <div>
               <dt>Writing</dt>
-              <dd><a href="../index.html#publications">Internship report citation</a></dd>
+              <dd><a href="../index.html#publications">Mitacs internship report citation</a></dd>
             </div>
           </dl>
         </aside>

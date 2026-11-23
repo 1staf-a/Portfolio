@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Physics-Informed Neural Networks for Nonlinear Rod Dynamics | Istafa Sajid Qureshi">
-  <title>Physics-Informed Neural Networks for Nonlinear Rod Dynamics | Istafa Sajid Qureshi</title>
+  <meta name="description" content="Istafa Qureshi develops physics-informed neural networks to predict flexible rod motion and investigate how rods resist bending.">
+  <title>Physics-Informed Neural Networks for Nonlinear Rod Dynamics | Istafa Qureshi</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png">
   <link rel="stylesheet" href="../styles.css">
   <script src="../script.js" defer></script>
 </head>
@@ -12,7 +13,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a class="brand" href="../index.html#top" aria-label="Istafa Sajid Qureshi home">IQ</a>
+      <a class="brand" href="../index.html#top" aria-label="Istafa Qureshi home">IQ</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
         <span class="menu-lines" aria-hidden="true"></span>
         <span class="sr-only">Toggle navigation</span>
@@ -20,7 +21,7 @@
       <div class="nav-links" id="nav-links">
         <a href="../index.html#about">About</a>
         <a href="../index.html#research">Research</a>
-        <a href="../index.html#internships">Internships</a>
+        <a href="../index.html#internships">Industry</a>
         <a href="../index.html#projects">Projects</a>
         <a href="../index.html#experience">Experience</a>
         <a href="../index.html#publications">Writing</a>
@@ -35,16 +36,73 @@
       <div class="section-inner">
         <a class="back-link" href="../index.html#projects">Back to projects</a>
         <p class="eyebrow">Ongoing research</p>
-        <h1>Physics-Informed Neural Networks for Nonlinear Rod Dynamics</h1>
+        <h1>Predicting How Flexible Rods Move</h1>
         <p class="hero-statement">
-          I’m developing physics-informed neural networks to model how
-          flexible rods move and to investigate what that motion can reveal
-          about their mechanical behavior.
+          How does a flexible rod bend and twist, and what can its motion reveal
+          about how it resists bending? This research uses neural networks that
+          learn from simulated motion while accounting for the laws of mechanics.
         </p>
         <ul class="tag-list">
           <li>Physics-Informed Modeling</li>
           <li>Rod Dynamics</li>
+          <li>Python / PyTorch</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-inner project-detail-grid">
+        <article class="project-detail-main">
+          <h2>Forward and inverse rod models</h2>
+          <p>
+            Implemented the lab’s MATLAB nonlinear rod formulation in Python
+            and PyTorch. Developed physics-informed neural networks for
+            static and three-dimensional dynamic rod problems. The forward
+            model predicts the rod’s response for a prescribed material law.
+            The inverse model estimates the relationship between bending
+            moment and curvature, predicting the two quantities as independent
+            fields.
+          </p>
+          <p>
+            Used automatic differentiation to compute derivatives along the
+            rod and, in dynamic cases, over time. Defined separate loss terms
+            for the governing equations, reference data, boundary conditions,
+            and initial conditions where applicable.
+          </p>
+
+          <h2>Training and evaluation</h2>
+          <p>
+            Investigate slow convergence when training on data and physics
+            constraints together. Experiments include pretraining on reference
+            data, Fourier features, Adam optimization, learning-rate
+            adaptation, and variable loss weights.
+          </p>
+          <p>
+            Compare predicted fields with analytical or simulated reference
+            solutions and track individual loss terms to assess accuracy,
+            numerical scaling, and convergence in selected test cases.
+            Reliable recovery of the nonlinear moment–curvature law remains
+            an open objective.
+          </p>
+        </article>
+
+        <aside class="project-detail-aside" aria-label="Project metadata">
+          <h2>Project Notes</h2>
+          <dl class="meta-list">
+            <div>
+              <dt>Institution</dt>
+              <dd>UC Merced</dd>
+            </div>
+            <div>
+              <dt>Role</dt>
+              <dd>Rod-model implementation and neural-network experiments</dd>
+            </div>
+            <div>
+              <dt>Advisor</dt>
+              <dd><a href="https://sites.ucmerced.edu/sgoyal/research1">Dr. Sachin Goyal</a></dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </section>
   </main>

@@ -7,6 +7,7 @@ The site uses only HTML, CSS, and minimal JavaScript. It has no build step, no p
 ## Files
 
 - `index.html` - homepage content, sections, and navigation.
+- `favicon.png` - IQ browser-tab icon shared by every page.
 - `styles.css` - dark monochrome visual system, responsive layout, cards, timeline, buttons, and accessibility states.
 - `script.js` - mobile navigation, active navigation highlighting, and current-year footer update.
 - `projects/` - static project detail pages.
@@ -83,7 +84,7 @@ The contact section includes:
 ## GitHub Pages Deployment
 
 1. Create a new GitHub repository.
-2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, and the `projects/` folder to the repository root.
+2. Upload `index.html`, `favicon.png`, `styles.css`, `script.js`, `README.md`, and the `projects/` folder to the repository root.
 3. Commit the files.
 4. Open the repository settings on GitHub.
 5. Go to **Pages**.
